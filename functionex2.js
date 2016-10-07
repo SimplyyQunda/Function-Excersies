@@ -42,8 +42,8 @@ function maxOfThree(4,6,7){
 //length 1) and returns true if it is a vowel, false otherwise.
 // ---------------------
 
-function isVowel(a){
-	if(a){
+function isVowel(char){
+	if(char === "a"){
 		return "true";
 	} else{
 		return "false";

@@ -48,7 +48,7 @@ var avg = function(x,y,z) {
 
 var getLength = function(x){
 
-var value = xyz;
+
 
 If (number){
 return "6";
