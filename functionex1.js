@@ -65,19 +65,20 @@ return number.toString();
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
 
+
 var greaterThan = function(x,y) {
-	if (x 10 < 0 ) {
+	if (x < y ) {
+		return "true";
+	} else {
 		return "false";
 	}
-	else if (y 10 > 0) {
-		return "true"
-}	else {
-	return "false"
-}
-}
+};
+
 		
 
-
+// }else {
+	// 	return "false";
+	// }
 
 
 // Q5
@@ -86,9 +87,10 @@ var greaterThan = function(x,y) {
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 
-var hello =  "Hello, Name!"
-var greet = function(name){
-	return "Hello, Name!" + name;
+var name =  "Qunda"
+
+var greet = function(Qunda){
+	return "Hello" + name
 }
 
 
@@ -106,21 +108,13 @@ var greet = function(name){
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 
-var madlib = function(food,drink,snack,sweets){
-	if (food){
-		return "The baby threw food at me";
-	}
-	if (drink){
-		return "Its been a long day, so i need a drink";
-	}
-	if (snack){
-		return "cheddar popcorn is my favorite snack";
-	}
-	if (sweets){
-		return "chocolate is first in my sweets book";
-	}
+var madlib = function(a,e,i,o) {
 
-}
+		return "The " + a + e + i + "loves " + o ;
+	}
+	
+
+
 
 
 

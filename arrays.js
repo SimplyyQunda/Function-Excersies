@@ -125,7 +125,22 @@ function
 // ---------------------------
 // 6. Join Both Arrays Together
 // ---------------------------
+//note to self, you could name it anything, you don't have to name it
+//concat
 
+
+var concat = function (items1, item2) {
+var result =[];
+ for(var count = 0; count < items1.length; count++){
+  result.push(items1[count]);
+ }
+ 
+ for(var count = 0; count < items2.length; count++){
+  result.push(items1[count]);
+}
+
+return result
+};
 
 
 
@@ -133,6 +148,10 @@ function
 // 7. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
 // ---------------------------
+
+// Instructors is a array of objects(which is what are inside of their bracket)
+//
+
 var instructors = [
     { firstname : 'JD', teaches : 'JavaScript'},
     { firstname : 'Tim', teaches : 'JavaScript'},
@@ -140,7 +159,25 @@ var instructors = [
     { firstname : 'Will', teaches : 'JavaScript'},
     { firstname : 'Calvin', teaches : 'JavaScript'},
 
-];
+  /////////////////notes/////////////////////
+
+//. means property accessor
+// if it was { firstname : 'Jake', teaches : ['JavaScript' , 'ruby']},
+// you can instructor[2].teaches[0]
+
+console.log(instructors[2].firstname)
+
+// or to give is a variable in simple from 
+
+var instructors = instructors[x];
+
+
+//is here to count through the array of objects, and -1 is there because its a array of objects
+//so start counting from 0.
+
+instructors[instructors.length-1].teaches
+
+
 
 
 

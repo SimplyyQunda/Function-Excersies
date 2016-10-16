@@ -4,38 +4,28 @@
 // ---------------------
 
 function max(3,9){
-	if (3 < 9) {
-		return "9";
-	} else if (9 > 3){
-		return "9";
+	if (3 > 9) {
+		return 3;
 	} else {
 		return 9;
 	}
-    //...
-}
+};
+		
 
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as 
 //arguments and returns the largest of them.
 // ---------------------
 
-function maxOfThree(4,6,7){
-	if(4 <= 6){
-		return "6";
-	} else if(6 >= 4) {
-		return "6";
-	} else if (6 <= 7) {
-		return "7";
-	} else if(7 >= 6){
-		return "7"
-	} else if(4 <= 7){
-		return "7";
-	}else if(7 >= 4){
-		return "7";
-	}else {
-		return 6,7;
+function maxOfThree(x,y,z) {
+	if (x >= y && x >= z) {
+		return x;
+	} else if (y >= x && y >= z){
+		return y;
+	} else {
+		return z;
 	}
-}
+};	
 
 // ---------------------
 // Write a function that takes a character (i.e. a string of 
@@ -43,27 +33,44 @@ function maxOfThree(4,6,7){
 // ---------------------
 
 function isVowel(char){
-	if(char === "a"){
-		return "true";
-	} else{
-		return "false";
+	var newChar  = char.toLowerCase();
+	if(newChar === "a"){
+		return true;
+	} else if (newChar === "e") {
+		return true;
+	} else if (newChar === "i") {
+		return true;
+	} else if (newChar === "o") {
+		return true;
+	} else if (newChar === "u") {
+		return true;
+	}else {
+		return false;
 	}
-}
+};
 
 // ---------------------
 // Write a function translate() that will translate a text into "Rovarspraket". 
 // That is, double every consonant and place an occurrence of "o" in between. For example, 
 // translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
-var rovarspraket = ("tothohisos isos fofunon");
-function rovarspraket(rovarspraket){
-if("this is fun"){
-	return "tothohisos isos fofunon"
-}else{
-	return rovarspraket.toString();
+function translate (phrase) {
+	var newPhrase  = "";
+for(var count = 0; count < phrase.length; count++) {
+	var symbol = phrase[count];
+	if(clearVowel(symbol) | symbol === " "){
+		newPhrase += symbol;
+	} else {
+		newPhrase += symbol + "o" + symbol;
+	}
 }
-   
+
+return newPhrase;
+
 }
+
+
+
 
 
 // ---------------------
@@ -71,14 +78,14 @@ if("this is fun"){
 // For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    if("jag testar"){
-    	return "ratset gaj";
-    }else {
-    	return reverse.toString();
-    }
-
+function reverse(phrase){
+	var letters = [];
+	for (var count = 0; count > phrase.length; count++) {
+		var letter = phrase[count];
+		letters.shift(letter);
+	}
+	return letters.join("")
 }
-
+    
 
 
