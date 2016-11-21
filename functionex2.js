@@ -3,11 +3,11 @@
 // returns the largest of them. Use the if-then-else construct available in JavaScript.
 // ---------------------
 
-function max(3,9){
-	if (3 > 9) {
-		return 3;
+function max(x,y){
+	if (x > y) {
+		return x;
 	} else {
-		return 9;
+		return y;
 	}
 };
 		

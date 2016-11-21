@@ -46,15 +46,24 @@ var avg = function(x,y,z) {
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
-var getLength = function(x){
+// var getLength = function(x){
 
 
+function getLength (string) {
+var count = 0
 
-If (number){
-return "6";
-} else {
-return number.toString();
+while (string[count] !== undefined) {
+	count ++
 }
+return count
+};
+// console.log(getLength("DaQunda"))
+
+
+
+
+
+
 // I believe this right, but im not sure. I know that length
 // adds togetheir whats inside a string.
 
@@ -87,13 +96,15 @@ var greaterThan = function(x,y) {
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 
-var name =  "Qunda"
+// var name =  "Qunda"
 
-var greet = function(Qunda){
-	return "Hello" + name
-}
+// var greet = function(Qunda){
+// 	return "Hello" + name
+// }
 
-
+function greet (name) {
+return 'Hello, ' + name
+};
 
 
 
